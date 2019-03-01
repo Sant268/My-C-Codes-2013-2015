@@ -1,0 +1,329 @@
+C Language
+1lecture: 
+Introduction of c language: 
+-Programming lang
+-Also executes 1st generation lang. lyk Cobol,Fontron,Algo,etc.
+-Also executes binary forms data (0's n 1's)
+-Using binary forms data prog. execution speed z very fast
+-Also known as Procedural lang.
+-Procedural lang. means what z to b done n how z to be done
+-C lang. 32 keywords r inserted
+-First BCPL lang. ws developd in 1967 by Martin Richards
+-BCPL stands 4 Basic Compiled Programming Lang.
+-B lang.ws developd in 1970 by Ken Thomson
+-Finally C lang. ws developd in 1972 by Dennis Ritchie
+-Using C lang. appln s/w as well as system s/w will b developd
+
+structure of c program
+	void,#include,stdio.h,conio.h,main(),clrscr,printf,getch,//,scanf
+msg.c
+alt+f9 msg.obj
+ctrl+f9 msg.exe
+escape sequences: /n  /t  /a:generate while 					loop in system (sound)
+2lecture:
+4datatypes
+format specifier
+7operators:-arithmetic,relational,logical,unary,binary,ternay,assignment
+variables/identifiers n rules of variables declar
+sum program
+
+3lecture:
+normalprogram:calc:arithmeticoperation,temperature degree-Fahrenheit, area of rectangle n perimeter of rectangle, area of circle n circumfrence of circle, 
+4lecture:
+simple n compound interest (math.h p*pow(temp,t)),interchanging nos. using 3rd variable,interchanging nos. without using 3rd variable,conversion km-m n km-cm,conversion h-m h-s,conversion from lowercase -uppercase n vice versa(a=97,b=98,.. n A=65,B=66..),etc.
+
+5lecture:
+conditional statement:  if,else if,nested if
+eveodd,positive:negative,eligiblevoter,divisible by 7,leapyear,greatest of 3,
+
+6lecture:
+switch statement: checkng equality optn
+calc,operator as i/p,grade,days of week
+
+7lecture
+looping construct: for,while,do while
+for:initialization,condition,increment/decrement
+natural no. 1-20,odd natural no.,sum of all natural no.,table,factorial,prime or not,factorial
+while:same program
+do while:same program
+
+8lecture:
+pattern  *		*****	1		55555
+		**		****		22		4444
+		***		***		333		333
+		****		**		4444	22
+		*****	*		55555	1
+
+9lecture
+Array:  Single Dimensional Array n Double Dimensional Array
+SDA: Integer Type n Character Type
+ Integer type: 10nos.intoarray,10nos.in reverse array,greatestof10nos.,disp odd nos. of 10,sort ascending 10 nos.
+
+10lecture:
+Character type: %s format specifier
+ accept name n display,accept name n disp in reverse(l=strlen(name))<string.h>,total no. of vowels n consonants frm name
+
+11lecture:
+DDA: Integer type n Character type
+Integer type: accept mks of 5 students of 4subject assign n disp
+Charater type: accept 5names n disp
+
+// String :  datatype dat combines grp f characters
+methods:
+length()
+equals()
+charAt()
+toUpperCase()
+toLowerCase()
+equalsIgnoreCase()
+compareTo()
+
+prog: str disp,reverse str,total no. f vowels n consonants f dat str,check palindrome, compare strs,convert lower n upper
+
+12lecture:
+Function:user define fun n system define fun
+categoriesoffun: declartion,calling,definition
+program: eveodd,table,factorial,prime or not
+
+13lecture:
+Structure: struct keyword
+types:Simple,Array of struct,Nested;Rules
+Simple: stud details accept n disp
+Array:2studs det n disp
+Nested: stud general det nested wid adv. det
+Assign:book struct,a/c struct
+
+14lecture:
+File Handling Rules
+program: accept filename n disp total contents of file,accept 2filename 1st:read mode n 2nd: write mode n read data frm 1 n write in 2,accept 2filename 1st:read mode n 2nd: append mode n read data frm 1 n append to other file,
+
+
+
+ ================================= Conditional Statement =====================================
+
+There are 3 types of Conditional Statement :
+
+1)If Statement:-
+	-> In if statement a particular condition is checked according to user.
+	-> If the statement is true then , it moves to its body part & executed ; 
+	otherwise terminated.
+
+	Syntax : if(cond)
+			{
+				body;
+			}
+
+2)If-Else Statement:-
+	-> In if-else statement a particular condition is checked according to user.
+	-> If the statement is true then ,it moves to its true(if) block & executed ;
+	 otherwise false(else) block executed. 
+	-> If-Else Statement is also called "ladder if statement". 
+
+	Syntax : if(cond)
+			{
+				body(true-block);
+			}
+		else
+			{
+				body(false-block);
+			}
+
+3)Nested If Statement:-
+	-> In nested if statement a particular condition is checked according to user.
+	-> If the outer if statement is true then ,it moves to its inner if statement & if its  true then executed ;
+	 otherwise moves to outer if statement & terminated. 
+	-> If inside if is "Nested if statement".
+
+	Syntax : outer-if(cond)
+			{	//outer if block
+				inner-if(cond)
+				{
+ 					body(true-block);
+				}
+				inner-else
+				{
+					body(false-block);
+				}
+			}
+		outer-else
+			{
+				body(false-block);
+			}
+
+
+=============================== Switch Statement ====================================
+
+-> 
+
+Switch Statement is used to check "multiple equality operations".
+-> It is used instead of Conditional Statement inorder to reduce the size of code & faster performance.
+-> Switch Statement has multiple case statement. 
+-> Each case statement has a  break statement. 
+-> Break Statement is used to terminate switch .
+-> Default Statement is used to display default value.
+
+Syntax :
+	switch(case)
+	{
+	case n1:body; 
+	break;
+	case n2: 
+	break;
+	case n-1: 
+	break;
+	default:invalid;
+	break;
+	}
+
+=============================== Looping Construct ====================================
+
+There are 3 types of Looping Construct :-
+
+"Loop" is used to execute a particular statement repeatively according to condition.
+
+1) For Loop :
+	It has 3 sections :
+	a) Initialization - It initializes the counter variable .
+	b) Condition - It checks cond ,if true then executed ;otherwise false then loop terminated.
+	c) Increment / Decrement - increments/decrements counter variable.
+	Syntax : 
+		for(init;cond;increment/decrement)
+		{
+			body;
+		}
+
+2) While Loop :
+	a) The initialization is done before loop starts.
+	b) Condition is given along with while i.e. while(cond).
+	c) Increment / Decrement in given inside loop after any operation.
+	Syntax :
+		init;
+		while(cond)
+		{
+			body;
+			increment/decrement;
+		}
+
+3) Do-while Loop :
+	-> Do-while executes once without checking cond. then,
+	    it increments counter variable  & finally checks cond. if true then,
+		 it continues loop. & while written after do body part with a semicolon . 
+	a) The initialization is done before loop starts.
+	b) Condition is given along with while i.e. while(cond);
+	c) Increment / Decrement in given inside loop after any operation.
+	Syntax :
+		init;
+		do
+		{
+			body;
+			increment/decrement;
+		}while(cond);
+
+
+============================  Array  =================================================
+
+
+-> Array is a continuous memory location which stores specific type of value.
+-> It allocates continuous memory location with similar datatype.
+-> Array starts from 0 index to size-1.
+-> There are 2 types of array:
+	1)Single Dimensional Array eg. arr[5]
+	2)Double Dimensional Array eg. arr[4][5]
+-> There are 2 types of SDA :
+	a)Integer Type SDA    eg. int arr[8]
+	b)Character Type SDA  eg. char arr[20]
+-> There are 2 types of DDA :
+	a)Integer Type DDA    eg. int arr[3][4]
+	b)Character Type DDA  eg. char arr[5][20]
+
+Note: %s is format specifier used for character type array
+	while declaration time size used n i/p -o/p time no size specified
+      	%s stores null pointer(\0) at the end of Character
+	%s stores grp of characters
+ 
+
+
+==============================  Function ==================================================
+
+-> It is a "Set of Instructions" which perform a particular task.
+-> There are 2 types of Functions :
+	1) User Define Function  	2) System Define Function
+
+
+
+
+
+1) User Define Function :
+	It is declared by user,tested by user & debug by user.
+2) System Define Function :
+	It is a system define function , whenever user call the function it performs its own task & return value.
+ 
+-> There are 3 categories of function :
+	
+	a) Declaration
+	b) Calling
+	c) Definition
+
+=============================  Structure ====================================
+
+-> Structure means " a pre-defined  format".
+-> Structure is a datatype that stores multipe datatype in single unit.
+-> 'struct' is a keyword for defining a new  Structure.
+-> A variable(object) of type structure stores individual copy of whole datamembers.
+-> There are 3 types of Structure :
+	
+	1) Simple Structure
+	2) Array of Structure
+	3) Nested Structure
+
+1) Simple Structure :
+	In  Simple Structure process  storing simple informations of an particular entity.
+2) Array of Structure :
+	Array of Structure  process storing multiple of informations of multiple entities.
+3) Nested Structure :
+    	Nested Structure is a structure inside structure.
+
+
+=============================== Pointer ============================
+
+-> Pointer means "pointing to other" .
+-> Pointer variable stores the address of any other variable .
+-> It occupies some byte space according to datatype .
+
+
+ How to access any variable address?
+	-> Ampersent (&) sign is used for access any variable address.
+
+ How to access pointer variable value?
+	-> (*) operator is used for access pointer variable value .
+ 
+ How to declare pointer variable?
+	-> datatype *varname
+ 		eg. int *ptr;	or 	char *ptr;
+
+
+=================================== Macro =======================================
+
+-> It is a set of block which is execute dat the compile time of the program.
+-> #define is used for declare macro.
+-> macro name given in caps.
+-> macro value is constant & it does not change(static).
+-> Types of Macros:
+	1) Object like Macro	2) Function like Macro
+
+1)PI
+2)max=A>B?A:B
+
+
+==================================== Union ==========================================
+
+-> It is a datatype which combines multiple datatype in single unit.
+-> union keyword is used for declare union.
+-> In union process share whole datamember in single memory allocation.
+-> It is similar to structure but only difference is memory allocation.
+-> Union size is equal to max size of any element (union size=sizeof(obj)).
+
+Note:- Union shows o/p of only that element whose priority/size is max & 
+	rest are displayed with garbage values.
+->Types of Union:
+	1) Simple Union		2) Nested Union
